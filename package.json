@@ -1,0 +1,40 @@
+{
+  "name": "hapi-ff",
+  "version": "0.0.1",
+  "description": "Feature flag management for Hapi.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gattermeier/hapi-ff.git"
+  },
+  "keywords": [
+    "hapi",
+    "hapijs",
+    "feature",
+    "flag"
+  ],
+  "author": "Matthias Gattermeier <matthias.gattermeier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gattermeier/hapi-ff/issues"
+  },
+  "homepage": "https://github.com/Gattermeier/hapi-ff#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.5.0",
+    "babel-runtime": "^6.5.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "hapi": "^13.0.0",
+    "inject-then": "^2.0.5",
+    "json-loader": "^0.5.4",
+    "tape": "^4.4.0",
+    "webpack": "^2.1.0-beta.3"
+  }
+}
