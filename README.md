@@ -1,6 +1,7 @@
 # hapi-ff
 Feature flags for Hapi.js
 
+[![Build Status](https://travis-ci.org/Gattermeier/hapi-ff.svg?branch=master)](https://travis-ci.org/Gattermeier/hapi-ff)    
 
 # Installation
 ```npm install hapi-ff```
