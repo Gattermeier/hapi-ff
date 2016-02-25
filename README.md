@@ -2,8 +2,10 @@
 Feature flags for Hapi.js
 
 [![Build Status](https://travis-ci.org/Gattermeier/hapi-ff.svg?branch=master)](https://travis-ci.org/Gattermeier/hapi-ff) 
-[![Coverage Status](https://david-dm.org/gattermeier/hapi-ff.svg)](https://david-dm.org/Gattermeier/hapi-ff) 
 [![npm version](https://badge.fury.io/js/hapi-ff.svg)](https://badge.fury.io/js/hapi-ff)
+[![Dependency Status](https://david-dm.org/gattermeier/hapi-ff.svg)](https://david-dm.org/Gattermeier/hapi-ff) 
+[![devDependency Status](https://david-dm.org/Gattermeier/hapi-ff/dev-status.svg)](https://david-dm.org/Gattermeier/hapi-ff#info=devDependencies)    
+
 # Installation
 ```npm install hapi-ff```
 
