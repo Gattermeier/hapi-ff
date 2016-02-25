@@ -1,8 +1,21 @@
 # hapi-ff
-Feature flag management plugin for hapijs
+Feature flags for Hapi.js
 
-If you are working on an experimental design, launch a closed beta or need to roll out a feature over time, feature flags are the way to go. This plugin for Hapi.js helps to implement your feature flags, allowing to pass functions as criteria truth tests.   
 
+# Installation
+```npm install hapi-ff```
+
+# Usage
+Register the plugin and pass an options object with your feature flags.
+Simple features accept boolean values. Features with dependencies are objects with a boolean property 'active' and a 'dependencies' array. Feature flags can also be functions, that accept the request object and the entire features object itself, giving access to checking for other flags.
+
+hapi-ff can be run in persistent in dynamic mode (default). In dynamic mode function feature flags have access to the request object and features are resolved on each incoming request. In persistent mode feature flags are set only once when registering the plugin and when running the update server function ('ffUpdate'). Function feature flags do not have access to the request object in persistent mode.
+
+- Persistent mode is helpful if your feature flags are request independent and need only be updated sporadically.
+- Dynamic mode is helpful if feature flags are request-dependent. For instance when using a url query object to set a flag.
+
+
+# Example Configuration
 
 ```
 server.register({
@@ -22,13 +35,3 @@ server.register({
   }
 });
 ```
-
-a feature test function has access to the request object and the other feature flags.
-in persistent mode the feature flags are set once, but can be updated with server.method. feature test functions will not have access to the request object in persistent mode.
-
-in non-persisten mode, feature flags are set on each incoming request, feature function tests are run with access to the respective request object.
-
-persistent option defaults to false.
-
-persistent mode is helpful if your feature flags are request independent and need only be updated sporadically.
-non-persisten mode is helpful if feature flags are request dependent. eg: using a url query object to set a flag.
