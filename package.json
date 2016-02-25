@@ -1,6 +1,6 @@
 {
   "name": "hapi-ff",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Feature flag management for Hapi.js",
   "main": "lib/index.js",
   "scripts": {
